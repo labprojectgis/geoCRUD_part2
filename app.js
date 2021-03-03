@@ -19,7 +19,9 @@ mongoose.set('useCreateIndex', true);
 //var mongoDB = process.env.MONGODB_URI || dev_db_url;
 //mongoose.connect(mongoDB);
 
-mongoose.connect("mongodb://denelius:mlab_b00gingrip@ds151008.mlab.com:51008/node_build", { useNewUrlParser: true });
+//mongoose.connect("mongodb://denelius:mlab_b00gingrip@ds151008.mlab.com:51008/node_build", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/geotutorial");//, { useNewUrlParser: true });
+
 
 //mongoose.connect("mongodb://denelius:mlab_b00gingrip@ds151008.mlab.com:51008/node_build", { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
